@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Grananda\AwsFaceMatch\FaceMatchServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -210,6 +210,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'FaceMatch' => Grananda\AwsFaceMatch\Facades\FaceMatch::class,
+        'FaceCollection' => Grananda\AwsFaceMatch\Facades\FaceCollection::class,
     ])->toArray(),
 
 ];
